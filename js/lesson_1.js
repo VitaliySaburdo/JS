@@ -1,17 +1,24 @@
-// You need to calculate amount of tip to give in a restaurant/cafe.
-// 	Workflow:
-// 1.	User inputs check summ. (Use “prompt” function).
-// 2.	User inputs tip percentage. (Use “prompt” function)
-// 3.   For cancelled input show “Canceled.”
-// 4.	You need to validate the input data: both values should be numbers, check summ can’t be
-// a negative number, percentage can’t be negative and bigger than 100.
-// 5.	If input data isn’t valid, you should show message “Invalid input data”. (Use “alert” function).
-// 6.	You need to calculate tip amount and total sum to pay.
-// 7.	Show message: (example). Use ”alert” function
-// Check summ: 200
-// Tip: 15%
-// Tip amount: 30
-// Total sum to pay:  230
+
+/**
+  |============================
+  | Exemple 1
+  |============================
+*/
+
+//  Вам нужно рассчитать сумму чаевых, которую можно дать в ресторане/кафе.
+// Рабочий процесс:
+// 1. Контрольная сумма, введенная пользователем. (Используйте функцию “prompt”).
+// 2. Пользователь вводит процент чаевых. (Используйте функцию “prompt”)
+// 3. Для отмененного ввода покажите “Canceled.
+// 4. Необходимо проверить входные данные: оба значения должны быть числами, контрольная сумма не может быть
+// отрицательное число, процент не может быть отрицательным и больше 100.
+// 5. Если входные данные недействительны, вы должны показать сообщение «Неверные входные данные». (Используйте функцию “alert”).
+// 6. Вам необходимо рассчитать сумму чаевых и общую сумму к оплате.
+// 7. Показать сообщение: (пример). Используйте функцию “alert”
+// Контрольная сумма: 200
+// Чаевые: 15%
+// Количество чаевых: 30
+// Общая сумма к оплате: 230
 
 // const sum = prompt('Введите сумму');
 // const procent = prompt('Введите сумму чаевых в %');
@@ -42,7 +49,14 @@
 //   }
 // }
 
+/**
+  |============================
+  | Exemple 2
+  |============================
+*/
+
 // const message = prompt('Введите сообщение');
+
 // if (message === null || message === '') {
 //   alert('Отмена');
 // } else {
@@ -53,14 +67,82 @@
 //   }
 // }
 
-const a = [1, 2, 3]
-const b = [5, [6, 7]]
-const c = 4
+/**
+  |============================
+  | Exemple 3 create []
+  |============================
+*/
 
-let array = []
+// // Создать один массив [1, 2, 3, 4, 5, 6, 7]
 
-const result = a.concat(b, c);
+// const a = [1, 2, 3]
+// const b = [5, [6, 7]]
+// const c = 4
 
-console.log
+// let array = []
 
-result
+// const result = array.concat(a, c, b[0], b[1]);
+
+
+// console.log(result) 
+// // [1, 2, 3, 4, 5, 6, 7]
+
+/**
+  |============================
+  | Exemple 4 splice
+  |============================
+*/
+
+// // Создать один массив [1, 2, 1, 2, 5, 6, 7]
+
+// const array = [1, 2, 3, 4, 5, 6, 7]
+
+// array.splice(2, 2, 1, 2);
+
+// console.log(array) 
+// // [1, 2, 1, 2, 5, 6, 7]
+
+/**
+  |============================
+  | Exemple 5 copyWithin
+  |============================
+*/
+
+// // // Создать один массив [1, 2, 1, 2, 5, 6, 7]
+
+// const array = [1, 2, 3, 4, 5, 6, 7]
+
+// array.copyWithin(2, 0, 2);
+
+// console.log(array)
+// // [1, 2, 1, 2, 5, 6, 7]
+
+/**
+  |============================
+  | Exemple 6 splice
+  |============================
+*/
+
+// // // Создать один массив [1, 2, 3, 0, 0, 0, 7]
+
+// const array = [1, 2, 3, 4, 5, 6, 7]
+
+// array.splice(3, 3, 0, 0, 0);
+
+// console.log(array)
+// // [1, 2, 3, 0, 0, 0, 7]
+
+/**
+  |============================
+  | Exemple 7 fill
+  |============================
+*/
+
+// // // Создать один массив [1, 2, 3, 0, 0, 0, 7]
+
+// const array = [1, 2, 3, 4, 5, 6, 7]
+
+// array.fill(0, 3, 6);
+
+// console.log(array) 
+// // [1, 2, 3, 0, 0, 0, 7]
