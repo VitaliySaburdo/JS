@@ -178,3 +178,20 @@
 
 // console.log(a)
 // 8
+
+// function findLongestWord(string) {
+//   // Change code below this line
+
+//   let words = string.split(' ');
+//   let longestWord = words[0];
+//   for (const word of words) {
+//     if (word.length > longestWord.length) {
+//       longestWord = word;
+//     }
+//   }
+//   return console.log(longestWord);
+//   // Change code above this line
+// }
+
+// findLongestWord('The quick brown fox jumped over the lazy dog');
+

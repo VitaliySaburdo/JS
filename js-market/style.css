@@ -1,0 +1,19 @@
+.list {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+}
+.img {
+  display: block;
+
+  width: 400px;
+}
+
+.serch-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
