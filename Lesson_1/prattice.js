@@ -1,5 +1,14 @@
-function findUniq(arr) {
-return arr.find(e => arr.lastIndexOf(e) === arr.indexOf(e))
+function towerBuilder(nFloors) {
+  const arr = [];
+  let star = '';
+
+  for (let i = 0; i < nFloors; i++) {
+    star += ' '.repeat(nFloors - i - 1) + '*' + ' '.repeat(i);
+    arr.push(star);
+  }
+
+  return arr;
 }
 
-console.log(findUniq([7, 7, 7, 1]));
+
+console.log(towerBuilder(2));
