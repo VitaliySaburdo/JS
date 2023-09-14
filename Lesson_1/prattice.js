@@ -66,9 +66,12 @@ const users = [
 
 // Change code below this line
 const getNamesSortedByFriendCount = users => {
-   return users.sort((a, b) => a.friends.length - b.friends.length).map((user) => user.name)
+  return users.sort((a, b) => a.friends.length - b.friends.length).map(user => user.name);
 };
 // Change code above this line
 
-console.log(getNamesSortedByFriendCount(users));
-// ["Moore Hensley", "Sharlene Bush", "Elma Head", "Sheree Anthony", "Ross Vazquez", "Carey Barr", "Blackburn Dotson"]
+const spread = (...a) => {
+  console.log(a);
+};
+
+spread(1, 2, 3, 4);
